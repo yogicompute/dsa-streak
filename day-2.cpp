@@ -26,7 +26,14 @@ void rotate_by_k_places(vector<int>& arr, int k, string dir){
 }
 
 void move_zeroes_to_end(vector<int>&arr){
+    int j = 0;
 
+    for(int i = 1;i<arr.size();i++){
+        if(arr[i] != 0){
+            j++;
+            swap(arr[i], arr[j]);
+        }
+    }
 }
 
 
