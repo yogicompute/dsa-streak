@@ -1,0 +1,6 @@
+*.out
+*.exe
+*.o
+day-*
+!day-*.cpp
+!day-*.h
