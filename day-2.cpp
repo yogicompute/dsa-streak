@@ -151,7 +151,7 @@ int find_op(vector<int>& arr){
     for(int i = arr.size() - 1;i>=0;i--){
         need = (need + arr[i] + 1) / 2;
     }
-    return max(1LL, need); // 1LL as max would compare need to LL only
+    return max(1LL, need); 
 }
 
 int main(){
