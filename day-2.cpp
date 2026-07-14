@@ -145,6 +145,15 @@ int find(vector<int>& arr) {
     return -1;
 }
 
+int find_op(vector<int>& arr){
+    long long need = 0;
+
+    for(int i = arr.size() - 1;i>=0;i--){
+        need = (need + arr[i] + 1) / 2;
+    }
+    return max(1LL, need);
+}
+
 int main(){
     vector<int> arr = {4, 4};
     cout<<find(arr);
